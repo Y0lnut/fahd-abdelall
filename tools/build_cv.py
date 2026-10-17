@@ -20,20 +20,22 @@ EXTRA = {
         "headline": "Master TEMA, Digital Management",
         "school": "NEOMA Business School, Paris",
         "profile": "Étudiant en Master Digital Management à NEOMA Business School, avec une double expérience en développement commercial B2B chez Samsic Facility et en gestion de projets bancaires chez BNP Paribas. Formé en France, aux États-Unis et au Qatar, je combine rigueur analytique, autonomie et sens du résultat pour mener des projets à forte valeur ajoutée.",
-        "labels": {"contact": "Contact", "email": "Email", "site": "Site", "loc": "Localisation", "langs": "Langues",
+        "labels": {"contact": "Contact", "email": "Email", "site": "Site", "loc": "Localisation", "mob": "Mobilité", "langs": "Langues",
                     "skills": "Compétences", "soft": "Savoir-être", "interests": "Centres d'intérêt",
                     "exp": "Expérience professionnelle", "edu": "Formation", "proj": "Projets"},
-        "location": "Paris, France",
+        "location": "Paris, Doha, Le Caire",
+        "mobility": "Ouvert aux offres en France et à l'international",
         "file": "CV_Fahd_Abd_El_All_FR.pdf",
     },
     "en": {
         "headline": "Master's in TEMA, Digital Management",
         "school": "NEOMA Business School, Paris",
         "profile": "Master's student in Digital Management at NEOMA Business School, with dual experience in B2B business development at Samsic Facility and banking project management at BNP Paribas. Educated in France, the United States and Qatar. Autonomous, analytical and results-driven, with strong skills in prospecting, automation and project coordination.",
-        "labels": {"contact": "Contact", "email": "Email", "site": "Website", "loc": "Location", "langs": "Languages",
+        "labels": {"contact": "Contact", "email": "Email", "site": "Website", "loc": "Location", "mob": "Mobility", "langs": "Languages",
                     "skills": "Skills", "soft": "Soft skills", "interests": "Interests",
                     "exp": "Professional experience", "edu": "Education", "proj": "Projects"},
-        "location": "Paris, France",
+        "location": "Paris, Doha, Cairo",
+        "mobility": "Open to roles in France and abroad",
         "file": "CV_Fahd_Abd_El_All_EN.pdf",
     },
 }
@@ -92,7 +94,8 @@ ul{{margin:0;padding-left:4mm}} main li{{margin-bottom:.3mm}}
   <section><h2>{L['contact']}</h2>
     <p><span class="k">{L['email']}</span><a href="mailto:{email}">{email}</a></p>
     <p><span class="k">{L['site']}</span><a href="https://{SITE}/">{SITE}</a></p>
-    <p><span class="k">{L['loc']}</span>{x['location']}</p></section>
+    <p><span class="k">{L['loc']}</span>{x['location']}</p>
+    <p><span class="k">{L['mob']}</span>{e(x['mobility'])}</p></section>
   <section><h2>{L['langs']}</h2><ul>{langs}</ul></section>
   <section><h2>{L['skills']}</h2>{skills}</section>
   <section><h2>{L['soft']}</h2><p>{e(', '.join(soft))}</p></section>

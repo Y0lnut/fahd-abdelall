@@ -1,6 +1,6 @@
 # Fahd Abd El All — Site CV
 
-Site CV personnel en ligne sur **https://y0lnut.github.io/fahd-abdelall/**, bilingue FR / EN, statique (HTML + CSS + JavaScript, sans build), hébergé gratuitement sur **GitHub Pages**.
+Site CV personnel en ligne sur **https://y0lnut.github.io/fahd-abdelall/**, trilingue français / anglais / arabe (avec mise en page de droite à gauche), statique (HTML + CSS + JavaScript, sans build), hébergé gratuitement sur **GitHub Pages**.
 
 ## Aperçu
 
@@ -29,11 +29,12 @@ fahd-cv-site/
 │   competences.html, contact.html, 404.html
 ├── content/
 │   ├── fr.json                # ✏️ Tout le texte en français
-│   └── en.json                # ✏️ Tout le texte en anglais
+│   ├── en.json                # ✏️ Tout le texte en anglais
+│   └── ar.json                # ✏️ Tout le texte en arabe
 ├── assets/
 │   ├── css/style.css          # Design (couleurs dans :root)
 │   ├── js/main.js             # Rendu des pages, effets, terminal, easter eggs
-│   ├── fonts/                 # Bricolage Grotesque + JetBrains Mono (auto-hébergées)
+│   ├── fonts/                 # Bricolage Grotesque, JetBrains Mono, Readex Pro pour l'arabe
 │   ├── img/                   # photo.jpg, photo-square.jpg, favicon.svg
 │   └── docs/                  # CV PDF téléchargeables (FR + EN)
 ├── tools/build_cv.py          # Génère les CV PDF FR/EN
@@ -41,7 +42,7 @@ fahd-cv-site/
 └── .github/workflows/deploy.yml  # Déploiement automatique sur GitHub Pages
 ```
 
-**Pour modifier le contenu, il suffit d'éditer `content/fr.json` et `content/en.json`** — pas besoin de toucher au HTML.
+**Pour modifier le contenu, il suffit d'éditer `content/fr.json`, `content/en.json` et `content/ar.json`** — pas besoin de toucher au HTML.
 
 ## Lancer en local
 

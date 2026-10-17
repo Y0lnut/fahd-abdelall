@@ -102,12 +102,12 @@ button { font: inherit; color: inherit; }
 .nav a[aria-current="page"] { color: var(--text); }
 .nav a[aria-current="page"]::after { transform: scaleX(1); }
 .bar-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
-.icon-btn, .lang {
+.icon-btn {
   border: 1px solid var(--line); background: transparent; border-radius: 999px; cursor: pointer;
   height: 36px; padding: 0 13px; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;
   transition: border-color .2s;
 }
-.icon-btn:hover, .lang:hover { border-color: var(--text); }
+.icon-btn:hover { border-color: var(--text); }
 .icon-btn kbd { font: 600 11px var(--mono); padding: 1px 5px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); }
 .icon-btn .ib-glyph { font: 600 13px var(--mono); }
 .menu-btn { display: none; }
@@ -433,4 +433,72 @@ html.blueprint .bar { background: rgba(18, 48, 90, .85); }
 }
 @media print {
   .bar, .progress, .palette, .demo, .mail, .actions, .toast, .next-page { display: none !important; }
+}
+
+/* ---------- sélecteur de langue ---------- */
+.langs-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; height: 36px; align-items: center; }
+.langs-switch button { border: 0; background: none; cursor: pointer; height: 28px; min-width: 32px; padding: 0 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--muted); transition: background .2s, color .2s; }
+.langs-switch button[lang="ar"] { font-family: "Readex", var(--sans); font-size: 14px; }
+.langs-switch button:hover { color: var(--text); }
+.langs-switch button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+:root[data-theme="dark"] .langs-switch button[aria-pressed="true"] { background: #e6ebf2; color: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .langs-switch button[aria-pressed="true"] { background: #e6ebf2; color: var(--ink); } }
+
+/* ---------- contexte des projets ---------- */
+.ctx h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 22px 0 6px; }
+.ctx h3:first-child { margin-top: 4px; }
+.ctx p { color: var(--muted); margin: 0; max-width: 46ch; }
+.ctx ol { margin: 0; padding: 0; list-style: none; counter-reset: step; color: var(--muted); max-width: 46ch; }
+.ctx li { counter-increment: step; position: relative; padding-inline-start: 34px; margin-bottom: 8px; }
+.ctx li::before {
+  content: counter(step); position: absolute; inset-inline-start: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+  display: grid; place-items: center; font: 600 12px var(--mono); color: var(--brass-text); border: 1px solid var(--brass);
+}
+.proj-text .ctx + .proj-note, .proj-text .ctx + .btn { margin-top: 24px; }
+.proj-text .ctx + .btn { display: inline-flex; }
+
+/* ---------- arabe (RTL) ---------- */
+@font-face {
+  font-family: "Readex";
+  src: url("../fonts/ReadexPro.woff2") format("woff2");
+  font-weight: 160 700; font-display: swap;
+}
+:root[lang="ar"] { --sans: "Readex", "Segoe UI", Tahoma, sans-serif; }
+:root[lang="ar"] body { line-height: 1.75; }
+:root[lang="ar"] .name, :root[lang="ar"] h2, :root[lang="ar"] .page-title, :root[lang="ar"] .pillar h3,
+:root[lang="ar"] .now-cta-t, :root[lang="ar"] .next-page strong, :root[lang="ar"] .ct-mail a { letter-spacing: 0; font-weight: 700; }
+:root[lang="ar"] .name { line-height: 1.15; }
+:root[lang="ar"] .name-first { font-size: clamp(64px, 10vw, 140px); }
+:root[lang="ar"] .name-last { font-size: clamp(40px, 6vw, 84px); }
+:root[lang="ar"] .page-title { line-height: 1.2; font-size: clamp(48px, 8vw, 112px); }
+:root[lang="ar"] h2 { line-height: 1.25; }
+:root[lang="ar"] .rotator { font-family: var(--sans); }
+:root[lang="ar"] .ct-mail a { font-family: "Bricolage", sans-serif; font-weight: 800; }
+
+[dir="rtl"] .nav a::after { transform-origin: right; }
+[dir="rtl"] .progress span { transform-origin: 100% 50%; }
+[dir="rtl"] .rot-sym { margin-right: 0; margin-left: 10px; transform: scaleX(-1); }
+[dir="rtl"] .cursor { margin-left: 0; margin-right: 3px; }
+[dir="rtl"] .portrait::before { inset: 22px 22px -22px -22px; transform: translate(12px, -12px); }
+[dir="rtl"] .badge { left: auto; right: -26px; }
+[dir="rtl"] .tl-rail { left: auto; right: 212px; }
+[dir="rtl"] .tl-dot { left: auto; right: 206px; }
+[dir="rtl"] .tl-when { text-align: left; }
+[dir="rtl"] .tl-item li { padding-left: 0; padding-right: 20px; }
+[dir="rtl"] .tl-item li::before { left: auto; right: 0; }
+[dir="rtl"] .pillar .go svg, [dir="rtl"] .next-page svg { transform: scaleX(-1); }
+[dir="rtl"] .pillar:hover .go svg { transform: scaleX(-1) translateX(4px); }
+[dir="rtl"] .next-page a:hover svg { transform: scaleX(-1) translateX(8px); }
+[dir="rtl"] .skills li:hover { padding-left: 0; padding-right: 8px; }
+[dir="rtl"] .dots i { transform-origin: right; }
+[dir="rtl"] .pal-box { direction: ltr; }
+.pal-out p { unicode-bidi: plaintext; }
+@media (max-width: 860px) {
+  [dir="rtl"] .badge { right: auto; left: -18px; }
+}
+@media (max-width: 760px) {
+  [dir="rtl"] .tl-rail { right: 6px; left: auto; }
+  [dir="rtl"] .tl-item { padding-left: 0; padding-right: 36px; }
+  [dir="rtl"] .tl-dot { right: 0; left: auto; }
+  [dir="rtl"] .tl-when { text-align: right; }
 }

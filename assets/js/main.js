@@ -24,15 +24,17 @@
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch {} },
   };
+  const LANGS = ["fr", "en", "ar"];
   const cache = {};
   let D, lang;
 
   function pickLang() {
     const q = new URLSearchParams(location.search).get("lang");
-    if (q === "fr" || q === "en") return q;
+    if (LANGS.includes(q)) { store.set("lang", q); return q; }
     const saved = store.get("lang");
-    if (saved === "fr" || saved === "en") return saved;
-    return (navigator.language || "fr").toLowerCase().startsWith("fr") ? "fr" : "en";
+    if (LANGS.includes(saved)) return saved;
+    const nav = (navigator.language || "fr").toLowerCase();
+    return nav.startsWith("ar") ? "ar" : nav.startsWith("fr") ? "fr" : "en";
   }
   async function load(l) {
     if (!cache[l]) cache[l] = await (await fetch(`content/${l}.json`, { cache: "no-cache" })).json();
@@ -57,7 +59,9 @@
           <button class="icon-btn" id="term-btn" type="button" aria-label="${esc(u.terminalHint)}" title="${esc(u.terminalHint)}">
             <span class="ib-glyph" aria-hidden="true">&gt;_</span><span class="ib-label">${esc(u.terminalBtn)}</span><kbd>/</kbd>
           </button>
-          <button class="lang" id="lang-toggle" type="button" aria-label="${esc(u.langSwitch)}">${esc(u.langSwitchShort)}</button>
+          <div class="langs-switch" role="group" aria-label="${esc(u.langSwitch)}">
+            ${LANGS.map((l) => `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}" title="${esc(u.langs[l])}">${l === "ar" ? "ع" : l.toUpperCase()}</button>`).join("")}
+          </div>
           <a class="btn btn-ink btn-sm" data-cv href="#" download>${esc(u.download)}</a>
           <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -88,7 +92,7 @@
     $(".skip").textContent = u.skip;
     $$("[data-cv]").forEach((a) => { a.href = D.hero.cv; });
 
-    $("#lang-toggle").addEventListener("click", () => setLang(lang === "fr" ? "en" : "fr"));
+    $$(".langs-switch button").forEach((b) => b.addEventListener("click", () => b.dataset.lang !== lang && setLang(b.dataset.lang)));
     $("#term-btn").addEventListener("click", () => openPalette());
     $("#menu-btn").addEventListener("click", (e) => {
       const open = $("#nav").classList.toggle("open");
@@ -107,6 +111,12 @@
     if (!el) return;
     el.setAttribute("aria-label", text);
     if (reduced) { el.textContent = text; return; }
+    if (lang === "ar") {
+      el.textContent = text;
+      el.animate([{ opacity: 0, filter: "blur(8px)", transform: "translateY(.15em)" }, { opacity: 1, filter: "blur(0)", transform: "none" }],
+        { duration: dur, delay, easing: "cubic-bezier(.2,.7,.1,1)", fill: "backwards" });
+      return;
+    }
     const glyphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&$/<>{}";
     const chars = [...text];
     const solid = chars.filter((c) => c !== " ");
@@ -217,7 +227,7 @@
   const R = {
     home() {
       const h = D.hero, H = D.home;
-      $("#prompt").innerHTML = `<span class="p-user">fahd@paris</span>:~$ whoami`;
+      $("#prompt").innerHTML = `<span dir="ltr"><span class="p-user">fahd@paris</span>:~$ whoami</span>`;
       decode($("#name-first"), h.first, 60, 550);
       decode($("#name-last"), h.last, 220, 650);
       $("#tagline").textContent = h.tagline;
@@ -261,7 +271,13 @@
       const s = D.scrapper, m = D.mailer;
       $("#sc-name").textContent = s.name;
       $("#sc-stack").textContent = s.stack;
-      $("#sc-desc").textContent = s.description;
+      const L = D.projectLabels;
+      const ctx = (o) => `
+        <h3>${esc(L.need)}</h3><p>${esc(o.need)}</p>
+        <h3>${esc(L.how)}</h3><ol>${o.how.map((h) => `<li>${esc(h)}</li>`).join("")}</ol>
+        <h3>${esc(L.impact)}</h3><p>${esc(o.impact)}</p>`;
+      $("#sc-ctx").innerHTML = ctx(s);
+      $("#ml-ctx").innerHTML = ctx(m);
       $("#sc-note").textContent = D.ui.simulation;
       $("#sc-l-first").textContent = s.fields.first;
       $("#sc-l-last").textContent = s.fields.last;
@@ -272,12 +288,12 @@
         $("#sc-domain").value = s.defaults.domain;
       }
       $("#sc-run").textContent = s.run;
+      if (!scBusy) $("#sc-results").innerHTML = "";
       $("#sc-api-l").textContent = s.statsApi;
       $("#sc-cache-l").textContent = s.statsCache;
       $("#sc-hint").textContent = s.hint;
       $("#ml-name").textContent = m.name;
       $("#ml-stack").textContent = m.stack;
-      $("#ml-desc").textContent = m.description;
       $("#ml-next").textContent = m.next;
       mailIdx = 0; renderMail(false);
       if (!R.projects.bound) {
@@ -459,7 +475,7 @@
     } else if (c === "ls") {
       out(PAGES.map((p) => `<span class="t-ok">${esc(p.url)}</span>`).join("   ") + `   <span class="t-prompt">${esc(D.hero.cv.split("/").pop())}</span>`);
     } else if (c === "lang") {
-      closePalette(); setLang(lang === "fr" ? "en" : "fr");
+      closePalette(); setLang(LANGS[(LANGS.indexOf(lang) + 1) % LANGS.length]);
     } else if (c === "theme") {
       toggleTheme(); out(`<span class="t-dim">${esc(P.theme)}</span>`);
     } else if (c === "clear" || c === "cls") {
@@ -542,6 +558,7 @@
 
   function render() {
     document.documentElement.lang = D.lang;
+    document.documentElement.dir = D.dir || "ltr";
     const meta = $('meta[name="description"]');
     if (PAGE === "home") { document.title = D.meta.title; meta.content = D.meta.description; }
     else if (PAGE === "404") document.title = `404 — ${D.hero.first} ${D.hero.last}`;

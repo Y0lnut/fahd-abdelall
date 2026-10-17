@@ -12,6 +12,7 @@
   <meta property="og:image" content="assets/img/photo-square.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/BricolageGrotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <script>try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("lang");if(l==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl"}}catch(e){}</script>
   <link rel="stylesheet" href="assets/css/style.css">
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
@@ -28,17 +29,17 @@
         <div class="proj-text">
           <h2 class="h-proj" id="sc-name"></h2>
           <p class="proj-stack" id="sc-stack"></p>
-          <p id="sc-desc"></p>
+          <div class="ctx" id="sc-ctx"></div>
           <p class="proj-note" id="sc-note"></p>
         </div>
         <div class="demo spot" id="scrapper">
           <form class="demo-form" id="sc-form">
-            <label><span id="sc-l-first"></span><input id="sc-first" autocomplete="off" required maxlength="30"></label>
-            <label><span id="sc-l-last"></span><input id="sc-last" autocomplete="off" required maxlength="30"></label>
-            <label class="wide"><span id="sc-l-domain"></span><input id="sc-domain" autocomplete="off" required maxlength="40"></label>
+            <label><span id="sc-l-first"></span><input dir="ltr" id="sc-first" autocomplete="off" required maxlength="30"></label>
+            <label><span id="sc-l-last"></span><input dir="ltr" id="sc-last" autocomplete="off" required maxlength="30"></label>
+            <label class="wide"><span id="sc-l-domain"></span><input dir="ltr" id="sc-domain" autocomplete="off" required maxlength="40"></label>
             <button class="btn btn-ink wide" type="submit" id="sc-run"></button>
           </form>
-          <ul class="sc-results" id="sc-results" aria-live="polite"></ul>
+          <ul class="sc-results" dir="ltr" id="sc-results" aria-live="polite"></ul>
           <div class="sc-stats">
             <div><strong id="sc-api">0</strong><span id="sc-api-l"></span></div>
             <div><strong id="sc-cache">0</strong><span id="sc-cache-l"></span></div>
@@ -50,7 +51,7 @@
         <div class="proj-text">
           <h2 class="h-proj" id="ml-name"></h2>
           <p class="proj-stack" id="ml-stack"></p>
-          <p id="ml-desc"></p>
+          <div class="ctx" id="ml-ctx"></div>
           <button class="btn btn-line" type="button" id="ml-next"></button>
         </div>
         <div class="mail spot" id="mailer" aria-live="polite">

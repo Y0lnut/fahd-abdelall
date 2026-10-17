@@ -24,13 +24,18 @@
     "terminalHint": "Press / to open the terminal",
     "terminalBtn": "Terminal",
     "seeMore": "See more",
-    "next": "Next page"
+    "next": "Next page",
+    "langs": {
+      "fr": "Français",
+      "en": "English",
+      "ar": "العربية"
+    }
   },
   "hero": {
     "first": "Fahd",
     "last": "Abd El All",
     "pitch": "A NEOMA Business School graduate, I've managed application projects at BNP Paribas, grown an international key account portfolio at Samsic Facility and built my own automation tools. I'm at home wherever a business needs to be understood, structured and delivered.",
-    "status": "NEOMA graduate 2026, open to opportunities in France.",
+    "status": "NEOMA graduate 2026, open to opportunities in France and abroad.",
     "cv": "assets/docs/CV_Fahd_Abd_El_All_EN.pdf",
     "prompt": "fahd@paris:~$ whoami",
     "tagline": "Between business and digital.",
@@ -41,7 +46,7 @@
       "business development",
       "digital transformation"
     ],
-    "badge": "Paris, France"
+    "badge": "Paris, Doha, Cairo"
   },
   "terminal": {
     "command": "test-plan --candidate fahd-abd-el-all",
@@ -107,7 +112,7 @@
     }
   ],
   "projectsTitle": "Projects",
-  "projectsIntro": "Two tools I built at Samsic Facility to speed up prospecting. You can try them here.",
+  "projectsIntro": "Two tools I designed at Samsic Facility to speed up B2B prospecting. For each: the need, how it works, and a demo to try.",
   "scrapper": {
     "name": "Mail Scrapper V4.2",
     "stack": "Excel, VBA, verification API",
@@ -129,7 +134,14 @@
     "cached": "cache",
     "statsApi": "API credits used",
     "statsCache": "answers served from cache",
-    "hint": "Run it again with the same values to see the cache at work."
+    "hint": "Run it again with the same values to see the cache at work.",
+    "need": "At Samsic Facility, prospecting key accounts meant hunting for each decision-maker's email by hand, and every API check cost credits.",
+    "how": [
+      "Enter the first name, last name and company domain.",
+      "The tool generates the most common address formats and checks them one by one, stopping at the first valid one.",
+      "Every result is cached, and the format that works is remembered for that company."
+    ],
+    "impact": "Less manual searching, more reliable prospect lists and saved API credits, since nothing is checked twice."
   },
   "mailer": {
     "name": "Email automation app",
@@ -152,7 +164,14 @@
         "first name": "Julie",
         "company": "Orion Logistics"
       }
-    ]
+    ],
+    "need": "Once the contacts were found, each personalised email still had to be written and sent one by one in Outlook.",
+    "how": [
+      "The prospect list and the email template live in Excel.",
+      "Variables (first name, last name, company) are filled in automatically for each recipient.",
+      "One click sends every email through Outlook, each with the right attachment."
+    ],
+    "impact": "Personalised campaigns sent in one click, with no copy-pasting and no wrong names."
   },
   "skillsTitle": "Skills",
   "skills": [
@@ -253,7 +272,7 @@
     "text": "To reach me, send me an email. It's the only channel I use for professional opportunities.",
     "user": "fahdabdelall8",
     "host": "gmail.com",
-    "location": "Based in Paris"
+    "location": "Based in France, I live between Paris, Doha and Cairo. Open to offers in any country."
   },
   "footer": "Fahd Abd El All",
   "home": {
@@ -286,7 +305,7 @@
       }
     ],
     "nowTitle": "Right now",
-    "now": "I'm wrapping up my corporate credit project management role at BNP Paribas and looking at what's next: project management, consulting, key account management or business development.",
+    "now": "I'm wrapping up my corporate credit project management role at BNP Paribas and looking at what's next: project management, consulting, key account management or business development. I live between Paris, Doha and Cairo, and I'm open to offers in any country.",
     "ctaTitle": "Have an opportunity in mind?",
     "cta": "Send me an email, I'd be glad to talk."
   },
@@ -348,5 +367,11 @@
     "title": "Page not found",
     "line": "Error 404: this page failed the test plan.",
     "back": "Back to home"
-  }
+  },
+  "projectLabels": {
+    "need": "The need",
+    "how": "How it works",
+    "impact": "What it changes"
+  },
+  "dir": "ltr"
 }

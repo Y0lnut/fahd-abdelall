@@ -24,13 +24,18 @@
     "terminalHint": "Appuyez sur / pour ouvrir le terminal",
     "terminalBtn": "Terminal",
     "seeMore": "Voir plus",
-    "next": "Page suivante"
+    "next": "Page suivante",
+    "langs": {
+      "fr": "Français",
+      "en": "English",
+      "ar": "العربية"
+    }
   },
   "hero": {
     "first": "Fahd",
     "last": "Abd El All",
     "pitch": "Diplômé de NEOMA Business School, j'ai piloté des projets applicatifs chez BNP Paribas, développé un portefeuille grands comptes chez Samsic Facility et conçu mes propres outils d'automatisation. Je suis à l'aise partout où il faut comprendre un métier, structurer et livrer.",
-    "status": "Diplômé NEOMA 2026, ouvert aux opportunités en France.",
+    "status": "Diplômé NEOMA 2026, ouvert aux opportunités en France et à l'international.",
     "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf",
     "prompt": "fahd@paris:~$ whoami",
     "tagline": "Entre business et digital.",
@@ -41,7 +46,7 @@
       "business development",
       "transformation digitale"
     ],
-    "badge": "Paris, France"
+    "badge": "Paris, Doha, Le Caire"
   },
   "terminal": {
     "command": "recette --candidat fahd-abd-el-all",
@@ -107,7 +112,7 @@
     }
   ],
   "projectsTitle": "Projets",
-  "projectsIntro": "Deux outils que j'ai construits chez Samsic Facility pour accélérer la prospection. Vous pouvez les essayer ici.",
+  "projectsIntro": "Deux outils que j'ai conçus chez Samsic Facility pour accélérer la prospection B2B. Pour chacun : le besoin, le fonctionnement, et une démo à essayer.",
   "scrapper": {
     "name": "Mail Scrapper V4.2",
     "stack": "Excel, VBA, API de vérification",
@@ -129,7 +134,14 @@
     "cached": "cache",
     "statsApi": "crédits API utilisés",
     "statsCache": "réponses servies par le cache",
-    "hint": "Relancez avec les mêmes valeurs pour voir le cache en action."
+    "hint": "Relancez avec les mêmes valeurs pour voir le cache en action.",
+    "need": "Chez Samsic Facility, prospecter des grands comptes voulait dire chercher à la main l'email de chaque décideur, et chaque vérification par API coûtait des crédits.",
+    "how": [
+      "On saisit le prénom, le nom et le domaine de l'entreprise.",
+      "L'outil génère les formats d'adresse les plus courants et les vérifie un par un, en s'arrêtant au premier valide.",
+      "Chaque résultat est gardé en cache, et le format qui fonctionne est mémorisé pour l'entreprise."
+    ],
+    "impact": "Moins de recherches manuelles, des listes de prospection plus fiables et des crédits API économisés, puisque rien n'est vérifié deux fois."
   },
   "mailer": {
     "name": "Application d'emailing automatisé",
@@ -152,7 +164,14 @@
         "prénom": "Julie",
         "entreprise": "Orion Logistique"
       }
-    ]
+    ],
+    "need": "Une fois les contacts trouvés, il fallait encore rédiger et envoyer chaque email personnalisé un par un dans Outlook.",
+    "how": [
+      "La liste de prospects et le modèle d'email sont dans Excel.",
+      "Les variables (prénom, nom, entreprise) sont remplacées automatiquement pour chaque destinataire.",
+      "Un clic envoie tous les emails via Outlook, chacun avec la bonne pièce jointe."
+    ],
+    "impact": "Des campagnes personnalisées envoyées en un clic, sans copier-coller ni erreur de nom."
   },
   "skillsTitle": "Compétences",
   "skills": [
@@ -253,7 +272,7 @@
     "text": "Pour me joindre, écrivez-moi par email. C'est le seul canal que j'utilise pour les opportunités professionnelles.",
     "user": "fahdabdelall8",
     "host": "gmail.com",
-    "location": "Basé à Paris"
+    "location": "Basé en France, je vis entre Paris, Doha et Le Caire. Ouvert aux offres dans tous les pays."
   },
   "footer": "Fahd Abd El All",
   "home": {
@@ -286,7 +305,7 @@
       }
     ],
     "nowTitle": "En ce moment",
-    "now": "Je termine ma mission chez BNP Paribas en gestion de projet crédit corporate et je regarde la suite : gestion de projet, conseil, key account management ou business development.",
+    "now": "Je termine ma mission chez BNP Paribas en gestion de projet crédit corporate et je regarde la suite : gestion de projet, conseil, key account management ou business development. Je vis entre Paris, Doha et Le Caire, et je suis ouvert aux offres dans tous les pays.",
     "ctaTitle": "Une opportunité en tête ?",
     "cta": "Écrivez-moi, je serai ravi d'en discuter."
   },
@@ -348,5 +367,11 @@
     "title": "Page introuvable",
     "line": "Erreur 404 : cette page n'a pas passé la recette.",
     "back": "Retour à l'accueil"
-  }
+  },
+  "projectLabels": {
+    "need": "Le besoin",
+    "how": "Comment ça marche",
+    "impact": "Ce que ça change"
+  },
+  "dir": "ltr"
 }

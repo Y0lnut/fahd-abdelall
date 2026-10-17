@@ -1,107 +1,245 @@
 {
   "lang": "fr",
   "meta": {
-    "title": "Fahd Abd El All — Digital Management & Gestion de projet",
-    "description": "Étudiant en Master TEMA – Digital Management à NEOMA Business School. Gestion de projet bancaire (BNP Paribas) et développement commercial B2B (Samsic Facility)."
+    "title": "Fahd Abd El All — Gestion de projet digital",
+    "description": "Fahd Abd El All, Master TEMA Digital Management à NEOMA Business School. Gestion de projet bancaire chez BNP Paribas, développement commercial B2B chez Samsic Facility, outils d'automatisation en Excel/VBA."
   },
-  "nav": {
-    "about": "Profil",
-    "experience": "Expérience",
-    "projects": "Projets",
-    "education": "Formation",
-    "skills": "Compétences",
-    "contact": "Contact",
-    "download": "Télécharger le CV"
+  "ui": {
+    "nav": {
+      "experience": "Parcours",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "contact": "Contact"
+    },
+    "download": "Télécharger le CV",
+    "emailMe": "Écrire un email",
+    "copy": "Copier l'adresse",
+    "copied": "Adresse copiée",
+    "langSwitch": "English",
+    "langSwitchShort": "EN",
+    "skip": "Aller au contenu",
+    "replay": "Relancer la recette",
+    "simulation": "Simulation de l'outil, aucune donnée réelle n'est envoyée."
   },
   "hero": {
-    "name": "Fahd Abd El All",
-    "title": "Étudiant Master TEMA – Digital Management",
-    "subtitle": "NEOMA Business School · Paris",
-    "pitch": "Double expérience en développement commercial B2B chez Samsic Facility et en gestion de projets bancaires chez BNP Paribas. Formé en France, aux États-Unis et au Qatar, je combine rigueur analytique, autonomie et sens du résultat pour mener des projets à forte valeur ajoutée.",
+    "first": "Fahd",
+    "last": "Abd El All",
+    "role": "Chef de projet digital en devenir, entre métier et IT.",
+    "pitch": "Je traduis les besoins métier en livrables concrets : cahiers de recette chez BNP Paribas, offres grands comptes chez Samsic Facility, et des outils d'automatisation que je code moi-même.",
+    "status": "Diplômé NEOMA 2026, disponible pour un poste en France.",
     "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf"
   },
+  "terminal": {
+    "command": "recette --candidat fahd-abd-el-all",
+    "loading": "Chargement du profil",
+    "checks": [
+      "Gestion de projet : crédit corporate chez BNP Paribas",
+      "Cahiers de recette et fiches produit rédigés",
+      "Coordination équipes IT et métier",
+      "Portefeuille grands comptes internationaux, Samsic Facility",
+      "Outil de prospection Mail Scrapper V4.2 conçu et livré",
+      "Formé en France, aux États-Unis et au Qatar",
+      "Français natif, anglais bilingue",
+      "Autonomie, rigueur, sens du résultat"
+    ],
+    "result": "Recette terminée : {n} contrôles passés, 0 échec.",
+    "ready": "Statut : prêt pour le poste."
+  },
+  "experienceTitle": "Parcours",
+  "experienceIntro": "Quatre expériences, de la sécurité au Qatar à la banque d'investissement à Paris.",
   "experience": [
     {
       "role": "Assistant Chef de Projet Crédit Corporate",
       "company": "BNP Paribas",
       "location": "Paris",
-      "period": "Fév. 2026 – Août 2026",
+      "period": "Fév. – Août 2026",
       "points": [
         "Rédaction de cahiers de recette pour des déploiements applicatifs en crédit corporate",
         "Réalisation de fiches produit à destination des équipes métier et IT",
         "Coordination transverse entre équipes techniques et parties prenantes métier",
-        "Participation au suivi de projets de transformation digitale bancaire"
+        "Suivi de projets de transformation digitale bancaire"
       ]
     },
     {
       "role": "Key Account Manager International Junior",
       "company": "Samsic Facility",
       "location": "Paris",
-      "period": "Fév. 2025 – Août 2025",
+      "period": "Fév. – Août 2025",
       "points": [
         "Suivi et fidélisation d'un portefeuille de clients grands comptes internationaux",
         "Élaboration d'offres commerciales sur mesure et coordination opérationnelle",
-        "Création d'un outil de prospection B2B personnalisé en Excel/VBA — Mail Scrapper V4.2"
+        "Conception de Mail Scrapper V4.2, un outil de prospection B2B en Excel/VBA"
       ]
     },
     {
-      "role": "Stagiaire Analyse & Incidents de Sécurité",
+      "role": "Stagiaire Analyse et Incidents de Sécurité",
       "company": "Falcon Samsic Security Services",
-      "location": "Doha",
+      "location": "Doha, Qatar",
       "period": "Mai – Nov. 2023",
       "points": [
-        "Gestion de missions logistiques et relation client en toute autonomie",
+        "Gestion de missions logistiques et de la relation client en autonomie",
         "Optimisation des processus opérationnels et des interactions clients"
       ]
     },
     {
       "role": "Assistant Directeur Commercial",
       "company": "Falcon Security",
-      "location": "Doha",
+      "location": "Doha, Qatar",
       "period": "Mai – Août 2022",
       "points": [
         "Rédaction de propositions commerciales, prospection et négociation de contrats",
-        "Refonte du site web et création de supports de communication marketing"
+        "Refonte du site web et création de supports de communication"
       ]
     }
   ],
-  "projects": [
+  "projectsTitle": "Projets",
+  "projectsIntro": "Deux outils que j'ai construits chez Samsic Facility pour accélérer la prospection. Vous pouvez les essayer ici.",
+  "scrapper": {
+    "name": "Mail Scrapper V4.2",
+    "stack": "Excel, VBA, API de vérification",
+    "description": "À partir d'un prénom, d'un nom et d'une entreprise, l'outil génère les adresses probables, les vérifie via une API et garde les résultats en cache pour ne jamais payer deux fois la même vérification.",
+    "fields": {
+      "first": "Prénom",
+      "last": "Nom",
+      "domain": "Domaine de l'entreprise"
+    },
+    "defaults": {
+      "first": "Camille",
+      "last": "Martin",
+      "domain": "entreprise.fr"
+    },
+    "run": "Générer et vérifier",
+    "checking": "vérification",
+    "valid": "valide",
+    "invalid": "rejetée",
+    "cached": "cache",
+    "statsApi": "crédits API utilisés",
+    "statsCache": "réponses servies par le cache",
+    "hint": "Relancez avec les mêmes valeurs pour voir le cache en action."
+  },
+  "mailer": {
+    "name": "Application d'emailing automatisé",
+    "stack": "Excel, VBA, Outlook",
+    "description": "Un modèle, une liste de prospects, un clic : chaque email part personnalisé avec les bonnes variables et la bonne pièce jointe.",
+    "next": "Destinataire suivant",
+    "subject": "Objet : {entreprise} et la gestion de vos sites",
+    "body": "Bonjour {prénom},\n\nJe me permets de vous contacter au sujet des services de facility management pour {entreprise}. Vous trouverez en pièce jointe notre présentation.\n\nBien cordialement,",
+    "attachment": "Presentation_{entreprise}.pdf",
+    "recipients": [
+      {
+        "prénom": "Sophie",
+        "entreprise": "Atelier Nord"
+      },
+      {
+        "prénom": "Karim",
+        "entreprise": "Groupe Lumen"
+      },
+      {
+        "prénom": "Julie",
+        "entreprise": "Orion Logistique"
+      }
+    ]
+  },
+  "skillsTitle": "Compétences",
+  "skills": [
     {
-      "name": "Mail Scrapper V4.2",
-      "stack": ["Excel", "VBA", "API externe"],
-      "description": "Outil de génération et de vérification d'emails B2B : cache intelligent pour éviter les vérifications redondantes, filtrage automatique des adresses valides, base interne des formats d'emails par entreprise."
+      "group": "Outils et tech",
+      "items": [
+        "Excel / VBA",
+        "SQL",
+        "Python",
+        "Tableau",
+        "Développement web front-end",
+        "Pack Office",
+        "Pack Adobe"
+      ]
     },
     {
-      "name": "Application d'emailing automatisé",
-      "stack": ["Excel", "VBA", "Outlook"],
-      "description": "Interface Excel couplée à Outlook pour l'envoi groupé personnalisé en un clic : variables dynamiques (nom, prénom, entreprise), pièces jointes automatiques, personnalisation à grande échelle."
+      "group": "CRM et prospection",
+      "items": [
+        "HubSpot",
+        "Salesforce",
+        "LinkedIn Sales Navigator",
+        "Waalaxy"
+      ]
+    },
+    {
+      "group": "Gestion de projet",
+      "items": [
+        "Cahiers de recette",
+        "Fiches produit",
+        "Coordination IT / métier",
+        "Déploiement applicatif",
+        "Transformation digitale"
+      ]
+    },
+    {
+      "group": "Savoir-être",
+      "items": [
+        "Esprit analytique",
+        "Autonomie",
+        "Communication claire",
+        "Adaptabilité",
+        "Esprit d'équipe"
+      ]
     }
   ],
+  "educationTitle": "Formation",
   "education": [
-    { "school": "NEOMA Business School", "degree": "Master TEMA – Digital Management", "place": "Paris", "period": "2021 – 2026" },
-    { "school": "John Carroll University", "degree": "Programme d'échange", "place": "Cleveland, USA", "period": "2024" },
-    { "school": "Epitech", "degree": "Programme d'échange", "place": "Paris", "period": "2022" }
+    {
+      "school": "NEOMA Business School",
+      "degree": "Master TEMA, Digital Management",
+      "place": "Paris",
+      "period": "2021 – 2026"
+    },
+    {
+      "school": "John Carroll University",
+      "degree": "Semestre d'échange",
+      "place": "Cleveland, États-Unis",
+      "period": "2024"
+    },
+    {
+      "school": "Epitech",
+      "degree": "Programme d'échange",
+      "place": "Paris",
+      "period": "2022"
+    }
   ],
-  "skills": {
-    "Outils & tech": ["Excel / VBA", "SQL", "Python", "Tableau", "Dev. web front-end", "Pack Office", "Pack Adobe"],
-    "CRM & prospection": ["HubSpot", "Salesforce", "Sales Navigator", "Waalaxy"],
-    "Gestion de projet": ["Cahiers de recette", "Fiches produit", "Coordination IT / métier", "Déploiement applicatif", "Transformation digitale"],
-    "Soft skills": ["Esprit analytique", "Autonomie & initiative", "Communication claire", "Adaptabilité", "Esprit collaboratif"]
-  },
+  "languagesTitle": "Langues",
   "languages": [
-    { "name": "Français", "level": "Langue natale" },
-    { "name": "Anglais", "level": "Bilingue" },
-    { "name": "Arabe", "level": "Intermédiaire" },
-    { "name": "Espagnol", "level": "Notions" }
+    {
+      "name": "Français",
+      "level": "Langue maternelle",
+      "value": 5
+    },
+    {
+      "name": "Anglais",
+      "level": "Bilingue",
+      "value": 5
+    },
+    {
+      "name": "Arabe",
+      "level": "Intermédiaire",
+      "value": 3
+    },
+    {
+      "name": "Espagnol",
+      "level": "Notions",
+      "value": 1
+    }
   ],
-  "interests": ["Boxe amateur", "Intelligence artificielle", "Voyages & cultures"],
+  "interestsTitle": "En dehors du travail",
+  "interests": [
+    "Boxe amateur",
+    "Intelligence artificielle",
+    "Voyages et cultures"
+  ],
   "contact": {
-    "headline": "Travaillons ensemble",
-    "text": "Je recherche un poste en gestion de projet digital, transformation ou business development. N'hésitez pas à me contacter.",
-    "email": "fahdabdelall8@gmail.com",
-    "phone": "+33 6 06 66 06 63",
-    "showPhone": false,
-    "linkedin": "",
-    "location": "Paris, France"
-  }
+    "title": "Parlons de votre projet",
+    "text": "Je recherche un poste en gestion de projet digital, transformation ou business development. Pour me joindre, écrivez-moi par email.",
+    "user": "fahdabdelall8",
+    "host": "gmail.com",
+    "location": "Basé à Paris"
+  },
+  "footer": "Fahd Abd El All"
 }

@@ -3,75 +3,155 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fahd Abd El All — CV</title>
-  <meta name="description" content="Étudiant en Master TEMA – Digital Management à NEOMA Business School.">
-  <meta property="og:title" content="Fahd Abd El All — CV">
-  <meta property="og:description" content="Digital Management · Gestion de projet · Business development B2B">
+  <title>Fahd Abd El All — Gestion de projet digital</title>
+  <meta name="description" content="Fahd Abd El All, Master TEMA Digital Management à NEOMA Business School. Gestion de projet chez BNP Paribas, business development B2B chez Samsic Facility.">
+  <meta name="theme-color" content="#101c2e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fahd Abd El All — Gestion de projet digital">
+  <meta property="og:description" content="Entre métier et IT : gestion de projet, business development B2B et outils d'automatisation.">
   <meta property="og:image" content="assets/img/photo-square.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/BricolageGrotesque.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top">F<span>A</span></a>
-    <nav id="nav" aria-label="Navigation principale"></nav>
-    <div class="topbar-actions">
-      <button id="lang-toggle" class="chip" type="button" aria-label="Changer de langue">EN</button>
-      <a id="cv-download" class="btn btn-small" href="#" download></a>
+  <a class="skip" href="#main" data-i18n="ui.skip">Aller au contenu</a>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="bar">
+    <a class="mark" href="#top" aria-label="Fahd Abd El All, haut de page">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="9"/><path d="M12 28V12h10M12 20h8M24 28l5-16 5 16M26 23h6"/></svg>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="bar-actions">
+      <button class="lang" id="lang-toggle" type="button"></button>
+      <a class="btn btn-ink btn-sm" id="cv-top" href="#" download></a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero" id="about">
-      <div class="hero-text">
-        <p class="eyebrow" id="hero-subtitle"></p>
-        <h1 id="hero-name"></h1>
-        <p class="hero-title" id="hero-title"></p>
-        <p class="hero-pitch" id="hero-pitch"></p>
-        <div class="hero-cta">
-          <a class="btn" href="#contact" id="cta-contact"></a>
-          <a class="btn btn-ghost" href="#experience" id="cta-exp"></a>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1 class="name" id="name">
+          <span class="name-first" id="name-first">Fahd</span>
+          <span class="name-last" id="name-last">Abd El All</span>
+        </h1>
+        <p class="role" id="role"></p>
+        <p class="pitch" id="pitch"></p>
+        <p class="status"><span class="pulse" aria-hidden="true"></span><span id="status"></span></p>
+        <div class="actions">
+          <a class="btn btn-brass" id="hero-mail" href="#contact"></a>
+          <a class="btn btn-line" id="hero-cv" href="#" download></a>
         </div>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/img/photo.jpg" alt="Portrait de Fahd Abd El All" width="800" height="1066">
+
+      <figure class="term" aria-label="Animation : recette du profil">
+        <div class="term-head">
+          <span class="term-file">recette.sh</span>
+          <button class="term-replay" id="replay" type="button"></button>
+        </div>
+        <div class="term-body" id="term" aria-live="off"></div>
+        <div class="term-portrait" id="portrait">
+          <img src="assets/img/photo.jpg" alt="Portrait de Fahd Abd El All" width="800" height="1066">
+        </div>
       </figure>
     </section>
 
-    <section id="experience" class="section">
-      <h2 data-key="experience"></h2>
-      <ol class="timeline" id="experience-list"></ol>
+    <!-- PARCOURS -->
+    <section class="block" id="experience">
+      <header class="block-head">
+        <h2 id="exp-title"></h2>
+        <p id="exp-intro"></p>
+      </header>
+      <ol class="tl" id="timeline">
+        <li class="tl-rail" aria-hidden="true"><span id="tl-fill"></span></li>
+      </ol>
     </section>
 
-    <section id="projects" class="section">
-      <h2 data-key="projects"></h2>
-      <div class="cards" id="projects-list"></div>
+    <!-- PROJETS -->
+    <section class="block" id="projects">
+      <header class="block-head">
+        <h2 id="proj-title"></h2>
+        <p id="proj-intro"></p>
+      </header>
+
+      <article class="proj">
+        <div class="proj-text">
+          <h3 id="sc-name"></h3>
+          <p class="proj-stack" id="sc-stack"></p>
+          <p id="sc-desc"></p>
+          <p class="proj-note" id="sc-note"></p>
+        </div>
+        <div class="demo" id="scrapper">
+          <form class="demo-form" id="sc-form">
+            <label><span id="sc-l-first"></span><input id="sc-first" autocomplete="off" required maxlength="30"></label>
+            <label><span id="sc-l-last"></span><input id="sc-last" autocomplete="off" required maxlength="30"></label>
+            <label class="wide"><span id="sc-l-domain"></span><input id="sc-domain" autocomplete="off" required maxlength="40"></label>
+            <button class="btn btn-ink wide" type="submit" id="sc-run"></button>
+          </form>
+          <ul class="sc-results" id="sc-results" aria-live="polite"></ul>
+          <div class="sc-stats">
+            <div><strong id="sc-api">0</strong><span id="sc-api-l"></span></div>
+            <div><strong id="sc-cache">0</strong><span id="sc-cache-l"></span></div>
+          </div>
+          <p class="sc-hint" id="sc-hint"></p>
+        </div>
+      </article>
+
+      <article class="proj proj-flip">
+        <div class="proj-text">
+          <h3 id="ml-name"></h3>
+          <p class="proj-stack" id="ml-stack"></p>
+          <p id="ml-desc"></p>
+          <button class="btn btn-line" type="button" id="ml-next"></button>
+        </div>
+        <div class="mail" id="mailer" aria-live="polite">
+          <div class="mail-row"><span class="mail-count" id="ml-count"></span></div>
+          <p class="mail-subject" id="ml-subject"></p>
+          <p class="mail-body" id="ml-body"></p>
+          <p class="mail-attach" id="ml-attach"></p>
+        </div>
+      </article>
     </section>
 
-    <section id="education" class="section">
-      <h2 data-key="education"></h2>
-      <ul class="edu" id="education-list"></ul>
-    </section>
-
-    <section id="skills" class="section">
-      <h2 data-key="skills"></h2>
+    <!-- COMPETENCES -->
+    <section class="block" id="skills">
+      <header class="block-head"><h2 id="skills-title"></h2></header>
       <div class="skills" id="skills-list"></div>
-      <div class="langs" id="languages-list"></div>
+
+      <div class="duo">
+        <div>
+          <h3 class="h3" id="edu-title"></h3>
+          <ul class="edu" id="edu-list"></ul>
+        </div>
+        <div>
+          <h3 class="h3" id="lang-title"></h3>
+          <ul class="langs" id="lang-list"></ul>
+          <h3 class="h3" id="int-title"></h3>
+          <p class="interests" id="int-list"></p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2 id="contact-headline"></h2>
-      <p id="contact-text"></p>
-      <div class="contact-links" id="contact-links"></div>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-in">
+        <h2 id="ct-title"></h2>
+        <p id="ct-text"></p>
+        <p class="ct-mail"><a id="ct-mail" href="#"></a></p>
+        <div class="actions">
+          <a class="btn btn-brass" id="ct-write" href="#"></a>
+          <button class="btn btn-ghost-dark" type="button" id="ct-copy"></button>
+          <a class="btn btn-ghost-dark" id="ct-cv" href="#" download></a>
+        </div>
+        <p class="ct-loc" id="ct-loc"></p>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Fahd Abd El All</p>
-  </footer>
+  <footer class="foot"><span id="foot"></span> <span id="year"></span></footer>
+  <div class="toast" id="toast" role="status"></div>
 
   <script src="assets/js/main.js" defer></script>
 </body>

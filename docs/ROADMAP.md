@@ -5,9 +5,9 @@
 - [x] Page unique responsive (mobile, tablette, desktop) + mode sombre automatique
 - [x] CV PDF téléchargeables (FR + EN)
 - [x] Déploiement automatique GitHub Pages
-- [ ] Créer le dépôt sur GitHub et pousser le code
-- [ ] Activer GitHub Pages (Settings → Pages → GitHub Actions)
-- [ ] Ajouter l'URL LinkedIn dans `content/*.json`
+- [x] Créer le dépôt sur GitHub et pousser le code
+- [x] Activer GitHub Pages
+- [x] Refonte : terminal animé, démos interactives, CV PDF sans téléphone
 
 ## Phase 2 — Contenu
 - [ ] Chiffrer les réalisations (ex. nombre de comptes suivis, temps gagné grâce à Mail Scrapper, nb de cahiers de recette)
@@ -23,5 +23,4 @@
 
 ## Phase 4 — Bonus
 - [ ] Version imprimable (`@media print`) pour exporter le site en PDF
-- [ ] Formulaire de contact (Formspree) au lieu du simple lien mailto
 - [ ] Animations plus poussées / section interactive « parcours » (France → USA → Qatar)

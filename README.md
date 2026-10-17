@@ -1,17 +1,17 @@
 # Fahd Abd El All — Site CV
 
-Site CV personnel, bilingue FR / EN, statique (HTML + CSS + JavaScript, sans build), hébergé gratuitement sur **GitHub Pages**.
+Site CV personnel en ligne sur **https://y0lnut.github.io/fahd-abdelall/**, bilingue FR / EN, statique (HTML + CSS + JavaScript, sans build), hébergé gratuitement sur **GitHub Pages**.
 
 ## Aperçu
 
 | Section | Contenu |
 |---|---|
-| Profil | Nom, titre, pitch, photo, boutons d'action |
+| Accueil | Nom, pitch et terminal animé qui « passe la recette » du profil, puis affiche la photo |
 | Expérience | BNP Paribas, Samsic Facility, Falcon Samsic, Falcon Security |
-| Projets | Mail Scrapper V4.2, application d'emailing automatisé |
+| Projets | Démos interactives de Mail Scrapper V4.2 (avec cache) et de l'app d'emailing |
 | Formation | NEOMA, John Carroll University, Epitech |
 | Compétences | Outils, CRM, gestion de projet, soft skills, langues |
-| Contact | Email (+ LinkedIn / téléphone optionnels) |
+| Contact | Email uniquement (adresse reconstruite en JavaScript pour limiter les robots) |
 
 Le bouton **FR / EN** bascule la langue ; `?lang=en` dans l'URL force l'anglais (pratique pour une candidature internationale).
 
@@ -26,8 +26,10 @@ fahd-cv-site/
 ├── assets/
 │   ├── css/style.css          # Design (couleurs dans :root)
 │   ├── js/main.js             # Affiche le contenu des JSON
+│   ├── fonts/                 # Bricolage Grotesque + JetBrains Mono (auto-hébergées)
 │   ├── img/                   # photo.jpg, photo-square.jpg, favicon.svg
 │   └── docs/                  # CV PDF téléchargeables (FR + EN)
+├── tools/build_cv.py          # Génère les CV PDF FR/EN
 ├── docs/ROADMAP.md            # Étapes et idées pour la suite
 └── .github/workflows/deploy.yml  # Déploiement automatique sur GitHub Pages
 ```
@@ -60,8 +62,7 @@ Ou avec VS Code : extension **Live Server** → clic droit sur `index.html` → 
 
 ## Personnaliser
 
-- **LinkedIn** : renseigner `contact.linkedin` dans les deux JSON.
-- **Téléphone** : masqué par défaut sur le site public ; passer `contact.showPhone` à `true` pour l'afficher.
-- **Couleurs** : variables `--navy` et `--gold` en haut de `assets/css/style.css`.
-- **CV PDF** : remplacer les fichiers dans `assets/docs/` (garder les mêmes noms).
+- **Contact** : par choix de sécurité, le seul moyen de contact est l'email (aucun numéro de téléphone, ni sur le site ni dans les PDF).
+- **Couleurs** : variables `--ink` et `--brass` en haut de `assets/css/style.css`.
+- **CV PDF** : générés depuis les mêmes JSON avec `python tools/build_cv.py` (nécessite `pip install playwright` puis `playwright install chromium`).
 - **Domaine perso** (ex. `fahdabdelall.com`) : voir `docs/ROADMAP.md`.

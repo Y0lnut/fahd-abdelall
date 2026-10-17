@@ -1,11 +1,17 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Fahd Abd El All — Digital Project Management",
-    "description": "Fahd Abd El All, Master's in TEMA Digital Management at NEOMA Business School. Banking project management at BNP Paribas, B2B business development at Samsic Facility, automation tools in Excel/VBA."
+    "title": "Fahd Abd El All — Business and digital",
+    "description": "Fahd Abd El All, NEOMA Business School graduate. Project management at BNP Paribas, key accounts at Samsic Facility, automation tools. Open to opportunities in project management, consulting and business development."
   },
   "ui": {
-    "nav": { "experience": "Experience", "projects": "Projects", "skills": "Skills", "contact": "Contact" },
+    "nav": {
+      "home": "Home",
+      "experience": "Experience",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
     "download": "Download CV",
     "emailMe": "Send an email",
     "copy": "Copy address",
@@ -14,15 +20,28 @@
     "langSwitchShort": "FR",
     "skip": "Skip to content",
     "replay": "Run the test plan again",
-    "simulation": "Tool simulation, no real data is sent."
+    "simulation": "Tool simulation, no real data is sent.",
+    "terminalHint": "Press / to open the terminal",
+    "terminalBtn": "Terminal",
+    "seeMore": "See more",
+    "next": "Next page"
   },
   "hero": {
     "first": "Fahd",
     "last": "Abd El All",
-    "role": "Digital project manager in the making, between business and IT.",
-    "pitch": "I turn business needs into concrete deliverables: test plans at BNP Paribas, key account proposals at Samsic Facility, and automation tools I build myself.",
-    "status": "NEOMA graduate 2026, available for a role in France.",
-    "cv": "assets/docs/CV_Fahd_Abd_El_All_EN.pdf"
+    "pitch": "A NEOMA Business School graduate, I've managed application projects at BNP Paribas, grown an international key account portfolio at Samsic Facility and built my own automation tools. I'm at home wherever a business needs to be understood, structured and delivered.",
+    "status": "NEOMA graduate 2026, open to opportunities in France.",
+    "cv": "assets/docs/CV_Fahd_Abd_El_All_EN.pdf",
+    "prompt": "fahd@paris:~$ whoami",
+    "tagline": "Between business and digital.",
+    "roles": [
+      "project management",
+      "consulting",
+      "key account management",
+      "business development",
+      "digital transformation"
+    ],
+    "badge": "Paris, France"
   },
   "terminal": {
     "command": "test-plan --candidate fahd-abd-el-all",
@@ -38,10 +57,10 @@
       "Autonomous, rigorous, results-driven"
     ],
     "result": "Test plan complete: {n} checks passed, 0 failures.",
-    "ready": "Status: ready for the role."
+    "ready": "Status: ready for what's next."
   },
   "experienceTitle": "Experience",
-  "experienceIntro": "Four roles, from security operations in Qatar to corporate banking in Paris.",
+  "experienceIntro": "Four roles in three countries, across project management, client relations and business development.",
   "experience": [
     {
       "role": "Project Manager Assistant, Corporate Credit",
@@ -93,8 +112,16 @@
     "name": "Mail Scrapper V4.2",
     "stack": "Excel, VBA, verification API",
     "description": "From a first name, last name and company, the tool generates likely addresses, verifies them through an API and caches the results so the same check is never paid for twice.",
-    "fields": { "first": "First name", "last": "Last name", "domain": "Company domain" },
-    "defaults": { "first": "Camille", "last": "Martin", "domain": "company.com" },
+    "fields": {
+      "first": "First name",
+      "last": "Last name",
+      "domain": "Company domain"
+    },
+    "defaults": {
+      "first": "Camille",
+      "last": "Martin",
+      "domain": "company.com"
+    },
     "run": "Generate and verify",
     "checking": "checking",
     "valid": "valid",
@@ -113,39 +140,213 @@
     "body": "Hello {first name},\n\nI'm reaching out about facility management services for {company}. Please find our presentation attached.\n\nBest regards,",
     "attachment": "Presentation_{company}.pdf",
     "recipients": [
-      { "first name": "Sophie", "company": "Atelier Nord" },
-      { "first name": "Karim", "company": "Lumen Group" },
-      { "first name": "Julie", "company": "Orion Logistics" }
+      {
+        "first name": "Sophie",
+        "company": "Atelier Nord"
+      },
+      {
+        "first name": "Karim",
+        "company": "Lumen Group"
+      },
+      {
+        "first name": "Julie",
+        "company": "Orion Logistics"
+      }
     ]
   },
   "skillsTitle": "Skills",
   "skills": [
-    { "group": "Tools and tech", "items": ["Excel / VBA", "SQL", "Python", "Tableau", "Front-end web development", "MS Office", "Adobe Suite"] },
-    { "group": "CRM and prospecting", "items": ["HubSpot", "Salesforce", "LinkedIn Sales Navigator", "Waalaxy"] },
-    { "group": "Project management", "items": ["Test plans", "Product sheets", "IT / business coordination", "Application deployment", "Digital transformation"] },
-    { "group": "Soft skills", "items": ["Analytical mindset", "Autonomy", "Clear communication", "Adaptability", "Teamwork"] }
+    {
+      "group": "Tools and tech",
+      "items": [
+        "Excel / VBA",
+        "SQL",
+        "Python",
+        "Tableau",
+        "Front-end web development",
+        "MS Office",
+        "Adobe Suite"
+      ]
+    },
+    {
+      "group": "CRM and prospecting",
+      "items": [
+        "HubSpot",
+        "Salesforce",
+        "LinkedIn Sales Navigator",
+        "Waalaxy"
+      ]
+    },
+    {
+      "group": "Project management",
+      "items": [
+        "Test plans",
+        "Product sheets",
+        "IT / business coordination",
+        "Application deployment",
+        "Digital transformation"
+      ]
+    },
+    {
+      "group": "Soft skills",
+      "items": [
+        "Analytical mindset",
+        "Autonomy",
+        "Clear communication",
+        "Adaptability",
+        "Teamwork"
+      ]
+    }
   ],
   "educationTitle": "Education",
   "education": [
-    { "school": "NEOMA Business School", "degree": "Master TEMA, Digital Management", "place": "Paris", "period": "2021 – 2026" },
-    { "school": "John Carroll University", "degree": "Exchange semester", "place": "Cleveland, United States", "period": "2024" },
-    { "school": "Epitech", "degree": "Exchange program", "place": "Paris", "period": "2022" }
+    {
+      "school": "NEOMA Business School",
+      "degree": "Master TEMA, Digital Management",
+      "place": "Paris",
+      "period": "2021 – 2026"
+    },
+    {
+      "school": "John Carroll University",
+      "degree": "Exchange semester",
+      "place": "Cleveland, United States",
+      "period": "2024"
+    },
+    {
+      "school": "Epitech",
+      "degree": "Exchange program",
+      "place": "Paris",
+      "period": "2022"
+    }
   ],
   "languagesTitle": "Languages",
   "languages": [
-    { "name": "French", "level": "Native", "value": 5 },
-    { "name": "English", "level": "Bilingual", "value": 5 },
-    { "name": "Arabic", "level": "Intermediate", "value": 3 },
-    { "name": "Spanish", "level": "Basic", "value": 1 }
+    {
+      "name": "French",
+      "level": "Native",
+      "value": 5
+    },
+    {
+      "name": "English",
+      "level": "Bilingual",
+      "value": 5
+    },
+    {
+      "name": "Arabic",
+      "level": "Intermediate",
+      "value": 3
+    },
+    {
+      "name": "Spanish",
+      "level": "Basic",
+      "value": 1
+    }
   ],
   "interestsTitle": "Outside work",
-  "interests": ["Amateur boxing", "Artificial intelligence", "Travel and cultures"],
+  "interests": [
+    "Amateur boxing",
+    "Artificial intelligence",
+    "Travel and cultures"
+  ],
   "contact": {
     "title": "Let's talk about your project",
-    "text": "I'm looking for a role in digital project management, transformation or business development. To reach me, send me an email.",
+    "text": "To reach me, send me an email. It's the only channel I use for professional opportunities.",
     "user": "fahdabdelall8",
     "host": "gmail.com",
     "location": "Based in Paris"
   },
-  "footer": "Fahd Abd El All"
+  "footer": "Fahd Abd El All",
+  "home": {
+    "title": "What I bring",
+    "intro": "Four ways I contribute, whatever the job title.",
+    "pillars": [
+      {
+        "verb": "Manage",
+        "text": "Test plans, product sheets, IT and business coordination: I move a project forward until it ships.",
+        "link": "parcours.html",
+        "cta": "See my experience"
+      },
+      {
+        "verb": "Analyse",
+        "text": "Understand a need, turn it into clear requirements and recommendations everyone can follow.",
+        "link": "competences.html",
+        "cta": "See my skills"
+      },
+      {
+        "verb": "Grow",
+        "text": "Prospecting, tailored proposals and retention of international key accounts.",
+        "link": "parcours.html",
+        "cta": "See my experience"
+      },
+      {
+        "verb": "Automate",
+        "text": "When a task repeats, I build the tool that does it for me.",
+        "link": "projets.html",
+        "cta": "Try the tools"
+      }
+    ],
+    "nowTitle": "Right now",
+    "now": "I'm wrapping up my corporate credit project management role at BNP Paribas and looking at what's next: project management, consulting, key account management or business development.",
+    "ctaTitle": "Have an opportunity in mind?",
+    "cta": "Send me an email, I'd be glad to talk."
+  },
+  "skillsIntro": "Technical tools, a commercial mindset and a project management method.",
+  "contactIntro": "Project management, consulting, key accounts or business development: let's talk about what you need.",
+  "palette": {
+    "title": "terminal",
+    "placeholder": "type help and press Enter",
+    "welcome": "Welcome. Type help to see the commands.",
+    "help": [
+      [
+        "help",
+        "show this help"
+      ],
+      [
+        "home, experience, projects, skills, contact",
+        "go to a page"
+      ],
+      [
+        "cv",
+        "download the CV"
+      ],
+      [
+        "email",
+        "send an email"
+      ],
+      [
+        "test-plan",
+        "run the profile test plan"
+      ],
+      [
+        "lang",
+        "switch to French"
+      ],
+      [
+        "theme",
+        "toggle light / dark"
+      ],
+      [
+        "clear",
+        "clear the screen"
+      ],
+      [
+        "exit",
+        "close (or Esc)"
+      ]
+    ],
+    "unknown": "Unknown command: {cmd}. Type help.",
+    "hire": "Permission granted. Opening your mail app...",
+    "sudo": "Nice try. Try this instead: sudo hire fahd",
+    "going": "Opening {page}...",
+    "theme": "Theme switched.",
+    "konami": "Konami code detected. You have a good eye, let's talk.",
+    "blueprintOn": "Blueprint mode on. Click the logo five more times to leave it.",
+    "blueprintOff": "Blueprint mode off.",
+    "console": "Inspecting the code? We should talk."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "line": "Error 404: this page failed the test plan.",
+    "back": "Back to home"
+  }
 }

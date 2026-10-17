@@ -3,156 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fahd Abd El All — Gestion de projet digital</title>
-  <meta name="description" content="Fahd Abd El All, Master TEMA Digital Management à NEOMA Business School. Gestion de projet chez BNP Paribas, business development B2B chez Samsic Facility.">
+  <title>Fahd Abd El All</title>
+  <meta name="description" content="Fahd Abd El All, diplômé de NEOMA Business School. Gestion de projet, conseil, grands comptes et business development.">
   <meta name="theme-color" content="#101c2e">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Fahd Abd El All — Gestion de projet digital">
-  <meta property="og:description" content="Entre métier et IT : gestion de projet, business development B2B et outils d'automatisation.">
+  <meta property="og:title" content="Fahd Abd El All — Business et digital">
+  <meta property="og:description" content="Gestion de projet, conseil, grands comptes et business development.">
   <meta property="og:image" content="assets/img/photo-square.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/BricolageGrotesque.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
-<body>
-  <a class="skip" href="#main" data-i18n="ui.skip">Aller au contenu</a>
-  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
-
-  <header class="bar">
-    <a class="mark" href="#top" aria-label="Fahd Abd El All, haut de page">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="9"/><path d="M12 28V12h10M12 20h8M24 28l5-16 5 16M26 23h6"/></svg>
-    </a>
-    <nav class="nav" id="nav" aria-label="Sections"></nav>
-    <div class="bar-actions">
-      <button class="lang" id="lang-toggle" type="button"></button>
-      <a class="btn btn-ink btn-sm" id="cv-top" href="#" download></a>
-    </div>
-  </header>
-
+<body data-page="home">
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div id="shell-top"></div>
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="hero-copy">
-        <h1 class="name" id="name">
-          <span class="name-first" id="name-first">Fahd</span>
-          <span class="name-last" id="name-last">Abd El All</span>
-        </h1>
-        <p class="role" id="role"></p>
+        <p class="prompt" id="prompt"></p>
+        <h1 class="name"><span class="name-first" id="name-first">Fahd</span><span class="name-last" id="name-last">Abd El All</span></h1>
+        <p class="tagline" id="tagline"></p>
+        <p class="rotator" aria-live="polite"><span class="rot-sym" aria-hidden="true">›</span><span id="rot"></span><span class="cursor" aria-hidden="true"></span></p>
         <p class="pitch" id="pitch"></p>
         <p class="status"><span class="pulse" aria-hidden="true"></span><span id="status"></span></p>
         <div class="actions">
-          <a class="btn btn-brass" id="hero-mail" href="#contact"></a>
-          <a class="btn btn-line" id="hero-cv" href="#" download></a>
+          <a class="btn btn-brass magnetic" id="hero-mail" href="contact.html"></a>
+          <a class="btn btn-line magnetic" data-cv href="#" download></a>
         </div>
       </div>
-
-      <figure class="term" aria-label="Animation : recette du profil">
-        <div class="term-head">
-          <span class="term-file">recette.sh</span>
-          <button class="term-replay" id="replay" type="button"></button>
+      <figure class="portrait" id="portrait">
+        <div class="portrait-in" id="portrait-in">
+          <img src="assets/img/photo.jpg" alt="Portrait de Fahd Abd El All" width="800" height="1066" fetchpriority="high">
+          <span class="scan" aria-hidden="true"></span>
         </div>
-        <div class="term-body" id="term" aria-live="off"></div>
-        <div class="term-portrait" id="portrait">
-          <img src="assets/img/photo.jpg" alt="Portrait de Fahd Abd El All" width="800" height="1066">
-        </div>
+        <figcaption class="badge"><span class="pulse" aria-hidden="true"></span><span id="badge"></span></figcaption>
       </figure>
     </section>
 
-    <!-- PARCOURS -->
-    <section class="block" id="experience">
-      <header class="block-head">
-        <h2 id="exp-title"></h2>
-        <p id="exp-intro"></p>
-      </header>
-      <ol class="tl" id="timeline">
-        <li class="tl-rail" aria-hidden="true"><span id="tl-fill"></span></li>
-      </ol>
+    <section class="block">
+      <header class="block-head"><h2 id="home-title"></h2><p id="home-intro"></p></header>
+      <div class="pillars" id="pillars"></div>
     </section>
 
-    <!-- PROJETS -->
-    <section class="block" id="projects">
-      <header class="block-head">
-        <h2 id="proj-title"></h2>
-        <p id="proj-intro"></p>
-      </header>
-
-      <article class="proj">
-        <div class="proj-text">
-          <h3 id="sc-name"></h3>
-          <p class="proj-stack" id="sc-stack"></p>
-          <p id="sc-desc"></p>
-          <p class="proj-note" id="sc-note"></p>
-        </div>
-        <div class="demo" id="scrapper">
-          <form class="demo-form" id="sc-form">
-            <label><span id="sc-l-first"></span><input id="sc-first" autocomplete="off" required maxlength="30"></label>
-            <label><span id="sc-l-last"></span><input id="sc-last" autocomplete="off" required maxlength="30"></label>
-            <label class="wide"><span id="sc-l-domain"></span><input id="sc-domain" autocomplete="off" required maxlength="40"></label>
-            <button class="btn btn-ink wide" type="submit" id="sc-run"></button>
-          </form>
-          <ul class="sc-results" id="sc-results" aria-live="polite"></ul>
-          <div class="sc-stats">
-            <div><strong id="sc-api">0</strong><span id="sc-api-l"></span></div>
-            <div><strong id="sc-cache">0</strong><span id="sc-cache-l"></span></div>
-          </div>
-          <p class="sc-hint" id="sc-hint"></p>
-        </div>
-      </article>
-
-      <article class="proj proj-flip">
-        <div class="proj-text">
-          <h3 id="ml-name"></h3>
-          <p class="proj-stack" id="ml-stack"></p>
-          <p id="ml-desc"></p>
-          <button class="btn btn-line" type="button" id="ml-next"></button>
-        </div>
-        <div class="mail" id="mailer" aria-live="polite">
-          <div class="mail-row"><span class="mail-count" id="ml-count"></span></div>
-          <p class="mail-subject" id="ml-subject"></p>
-          <p class="mail-body" id="ml-body"></p>
-          <p class="mail-attach" id="ml-attach"></p>
-        </div>
-      </article>
-    </section>
-
-    <!-- COMPETENCES -->
-    <section class="block" id="skills">
-      <header class="block-head"><h2 id="skills-title"></h2></header>
-      <div class="skills" id="skills-list"></div>
-
-      <div class="duo">
-        <div>
-          <h3 class="h3" id="edu-title"></h3>
-          <ul class="edu" id="edu-list"></ul>
-        </div>
-        <div>
-          <h3 class="h3" id="lang-title"></h3>
-          <ul class="langs" id="lang-list"></ul>
-          <h3 class="h3" id="int-title"></h3>
-          <p class="interests" id="int-list"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="contact-in">
-        <h2 id="ct-title"></h2>
-        <p id="ct-text"></p>
-        <p class="ct-mail"><a id="ct-mail" href="#"></a></p>
-        <div class="actions">
-          <a class="btn btn-brass" id="ct-write" href="#"></a>
-          <button class="btn btn-ghost-dark" type="button" id="ct-copy"></button>
-          <a class="btn btn-ghost-dark" id="ct-cv" href="#" download></a>
-        </div>
-        <p class="ct-loc" id="ct-loc"></p>
-      </div>
+    <section class="block now rv">
+      <div class="now-text"><h2 class="h-sm" id="now-title"></h2><p id="now"></p></div>
+      <div class="now-cta"><p class="now-cta-t" id="cta-title"></p><p id="cta"></p><a class="btn btn-ink magnetic" id="now-mail" href="contact.html"></a></div>
     </section>
   </main>
-
-  <footer class="foot"><span id="foot"></span> <span id="year"></span></footer>
-  <div class="toast" id="toast" role="status"></div>
-
+  <div id="shell-bottom"></div>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

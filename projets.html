@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets — Fahd Abd El All</title>
+  <meta name="description" content="Fahd Abd El All, diplômé de NEOMA Business School. Gestion de projet, conseil, grands comptes et business development.">
+  <meta name="theme-color" content="#101c2e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fahd Abd El All — Business et digital">
+  <meta property="og:description" content="Gestion de projet, conseil, grands comptes et business development.">
+  <meta property="og:image" content="assets/img/photo-square.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/BricolageGrotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="projects">
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div id="shell-top"></div>
+  <main id="main">
+    <header class="page-head">
+      <h1 class="page-title" id="page-title"></h1>
+      <p class="page-intro" id="page-intro"></p>
+    </header>
+    <section class="block block-tight">
+      <article class="proj">
+        <div class="proj-text">
+          <h2 class="h-proj" id="sc-name"></h2>
+          <p class="proj-stack" id="sc-stack"></p>
+          <p id="sc-desc"></p>
+          <p class="proj-note" id="sc-note"></p>
+        </div>
+        <div class="demo spot" id="scrapper">
+          <form class="demo-form" id="sc-form">
+            <label><span id="sc-l-first"></span><input id="sc-first" autocomplete="off" required maxlength="30"></label>
+            <label><span id="sc-l-last"></span><input id="sc-last" autocomplete="off" required maxlength="30"></label>
+            <label class="wide"><span id="sc-l-domain"></span><input id="sc-domain" autocomplete="off" required maxlength="40"></label>
+            <button class="btn btn-ink wide" type="submit" id="sc-run"></button>
+          </form>
+          <ul class="sc-results" id="sc-results" aria-live="polite"></ul>
+          <div class="sc-stats">
+            <div><strong id="sc-api">0</strong><span id="sc-api-l"></span></div>
+            <div><strong id="sc-cache">0</strong><span id="sc-cache-l"></span></div>
+          </div>
+          <p class="sc-hint" id="sc-hint"></p>
+        </div>
+      </article>
+      <article class="proj proj-flip">
+        <div class="proj-text">
+          <h2 class="h-proj" id="ml-name"></h2>
+          <p class="proj-stack" id="ml-stack"></p>
+          <p id="ml-desc"></p>
+          <button class="btn btn-line" type="button" id="ml-next"></button>
+        </div>
+        <div class="mail spot" id="mailer" aria-live="polite">
+          <div class="mail-row"><span class="mail-count" id="ml-count"></span></div>
+          <p class="mail-subject" id="ml-subject"></p>
+          <p class="mail-body" id="ml-body"></p>
+          <p class="mail-attach" id="ml-attach"></p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <div id="shell-bottom"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

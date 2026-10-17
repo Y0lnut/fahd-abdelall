@@ -4,28 +4,35 @@ Site CV personnel en ligne sur **https://y0lnut.github.io/fahd-abdelall/**, bili
 
 ## Aperçu
 
-| Section | Contenu |
+| Page | Contenu |
 |---|---|
-| Accueil | Nom, pitch et terminal animé qui « passe la recette » du profil, puis affiche la photo |
-| Expérience | BNP Paribas, Samsic Facility, Falcon Samsic, Falcon Security |
-| Projets | Démos interactives de Mail Scrapper V4.2 (avec cache) et de l'app d'emailing |
-| Formation | NEOMA, John Carroll University, Epitech |
-| Compétences | Outils, CRM, gestion de projet, soft skills, langues |
-| Contact | Email uniquement (adresse reconstruite en JavaScript pour limiter les robots) |
+| `index.html` | Accueil : nom qui se décode, rôles qui défilent, portrait révélé, « Ce que j'apporte » |
+| `parcours.html` | Chronologie des expériences (ligne qui se remplit au défilement) et formation |
+| `projets.html` | Démos jouables de Mail Scrapper V4.2 (avec cache) et de l'app d'emailing |
+| `competences.html` | Compétences, langues, centres d'intérêt |
+| `contact.html` | Email uniquement (adresse reconstruite en JavaScript pour limiter les robots) |
+| `404.html` | Page d'erreur façon terminal |
 
-Le bouton **FR / EN** bascule la langue ; `?lang=en` dans l'URL force l'anglais (pratique pour une candidature internationale).
+Le positionnement reste volontairement ouvert : gestion de projet, conseil, key account management, business development.
+
+### Easter eggs
+- **`/`** (ou Ctrl/Cmd + K) ouvre un terminal : `help`, `parcours`, `projets`, `cv`, `email`, `recette`, `theme`, `lang`, `whoami`, `ls`… et `sudo hire fahd`.
+- **Code Konami** (↑ ↑ ↓ ↓ ← → ← → B A) : pluie de confettis.
+- **5 clics rapides sur le logo** : mode « plan » qui affiche la structure de la page.
+- **Console du navigateur** : un message pour les curieux qui inspectent le code.
 
 ## Structure
 
 ```
 fahd-cv-site/
-├── index.html                 # Squelette de la page
+├── index.html, parcours.html, projets.html,
+│   competences.html, contact.html, 404.html
 ├── content/
 │   ├── fr.json                # ✏️ Tout le texte en français
 │   └── en.json                # ✏️ Tout le texte en anglais
 ├── assets/
 │   ├── css/style.css          # Design (couleurs dans :root)
-│   ├── js/main.js             # Affiche le contenu des JSON
+│   ├── js/main.js             # Rendu des pages, effets, terminal, easter eggs
 │   ├── fonts/                 # Bricolage Grotesque + JetBrains Mono (auto-hébergées)
 │   ├── img/                   # photo.jpg, photo-square.jpg, favicon.svg
 │   └── docs/                  # CV PDF téléchargeables (FR + EN)

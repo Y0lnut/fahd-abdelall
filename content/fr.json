@@ -1,11 +1,12 @@
 {
   "lang": "fr",
   "meta": {
-    "title": "Fahd Abd El All — Gestion de projet digital",
-    "description": "Fahd Abd El All, Master TEMA Digital Management à NEOMA Business School. Gestion de projet bancaire chez BNP Paribas, développement commercial B2B chez Samsic Facility, outils d'automatisation en Excel/VBA."
+    "title": "Fahd Abd El All — Business et digital",
+    "description": "Fahd Abd El All, diplômé de NEOMA Business School. Gestion de projet chez BNP Paribas, grands comptes chez Samsic Facility, outils d'automatisation. Ouvert aux opportunités en gestion de projet, conseil et business development."
   },
   "ui": {
     "nav": {
+      "home": "Accueil",
       "experience": "Parcours",
       "projects": "Projets",
       "skills": "Compétences",
@@ -19,15 +20,28 @@
     "langSwitchShort": "EN",
     "skip": "Aller au contenu",
     "replay": "Relancer la recette",
-    "simulation": "Simulation de l'outil, aucune donnée réelle n'est envoyée."
+    "simulation": "Simulation de l'outil, aucune donnée réelle n'est envoyée.",
+    "terminalHint": "Appuyez sur / pour ouvrir le terminal",
+    "terminalBtn": "Terminal",
+    "seeMore": "Voir plus",
+    "next": "Page suivante"
   },
   "hero": {
     "first": "Fahd",
     "last": "Abd El All",
-    "role": "Chef de projet digital en devenir, entre métier et IT.",
-    "pitch": "Je traduis les besoins métier en livrables concrets : cahiers de recette chez BNP Paribas, offres grands comptes chez Samsic Facility, et des outils d'automatisation que je code moi-même.",
-    "status": "Diplômé NEOMA 2026, disponible pour un poste en France.",
-    "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf"
+    "pitch": "Diplômé de NEOMA Business School, j'ai piloté des projets applicatifs chez BNP Paribas, développé un portefeuille grands comptes chez Samsic Facility et conçu mes propres outils d'automatisation. Je suis à l'aise partout où il faut comprendre un métier, structurer et livrer.",
+    "status": "Diplômé NEOMA 2026, ouvert aux opportunités en France.",
+    "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf",
+    "prompt": "fahd@paris:~$ whoami",
+    "tagline": "Entre business et digital.",
+    "roles": [
+      "gestion de projet",
+      "conseil",
+      "key account management",
+      "business development",
+      "transformation digitale"
+    ],
+    "badge": "Paris, France"
   },
   "terminal": {
     "command": "recette --candidat fahd-abd-el-all",
@@ -43,10 +57,10 @@
       "Autonomie, rigueur, sens du résultat"
     ],
     "result": "Recette terminée : {n} contrôles passés, 0 échec.",
-    "ready": "Statut : prêt pour le poste."
+    "ready": "Statut : prêt pour la suite."
   },
   "experienceTitle": "Parcours",
-  "experienceIntro": "Quatre expériences, de la sécurité au Qatar à la banque d'investissement à Paris.",
+  "experienceIntro": "Quatre expériences dans trois pays, entre gestion de projet, relation client et développement commercial.",
   "experience": [
     {
       "role": "Assistant Chef de Projet Crédit Corporate",
@@ -236,10 +250,103 @@
   ],
   "contact": {
     "title": "Parlons de votre projet",
-    "text": "Je recherche un poste en gestion de projet digital, transformation ou business development. Pour me joindre, écrivez-moi par email.",
+    "text": "Pour me joindre, écrivez-moi par email. C'est le seul canal que j'utilise pour les opportunités professionnelles.",
     "user": "fahdabdelall8",
     "host": "gmail.com",
     "location": "Basé à Paris"
   },
-  "footer": "Fahd Abd El All"
+  "footer": "Fahd Abd El All",
+  "home": {
+    "title": "Ce que j'apporte",
+    "intro": "Quatre façons de contribuer, quel que soit l'intitulé du poste.",
+    "pillars": [
+      {
+        "verb": "Piloter",
+        "text": "Cahiers de recette, fiches produit, coordination IT et métier : je fais avancer un projet jusqu'à son déploiement.",
+        "link": "parcours.html",
+        "cta": "Voir le parcours"
+      },
+      {
+        "verb": "Analyser",
+        "text": "Comprendre un besoin, le traduire en exigences claires et en recommandations que chacun peut suivre.",
+        "link": "competences.html",
+        "cta": "Voir les compétences"
+      },
+      {
+        "verb": "Développer",
+        "text": "Prospection, offres sur mesure et fidélisation de grands comptes internationaux.",
+        "link": "parcours.html",
+        "cta": "Voir le parcours"
+      },
+      {
+        "verb": "Automatiser",
+        "text": "Quand une tâche se répète, je construis l'outil qui la fait à ma place.",
+        "link": "projets.html",
+        "cta": "Essayer les outils"
+      }
+    ],
+    "nowTitle": "En ce moment",
+    "now": "Je termine ma mission chez BNP Paribas en gestion de projet crédit corporate et je regarde la suite : gestion de projet, conseil, key account management ou business development.",
+    "ctaTitle": "Une opportunité en tête ?",
+    "cta": "Écrivez-moi, je serai ravi d'en discuter."
+  },
+  "skillsIntro": "Des outils techniques, une culture commerciale et une méthode de gestion de projet.",
+  "contactIntro": "Gestion de projet, conseil, grands comptes ou business development : parlons de votre besoin.",
+  "palette": {
+    "title": "terminal",
+    "placeholder": "tapez help puis Entrée",
+    "welcome": "Bienvenue. Tapez help pour voir les commandes.",
+    "help": [
+      [
+        "help",
+        "afficher cette aide"
+      ],
+      [
+        "accueil, parcours, projets, competences, contact",
+        "aller à une page"
+      ],
+      [
+        "cv",
+        "télécharger le CV"
+      ],
+      [
+        "email",
+        "écrire un email"
+      ],
+      [
+        "recette",
+        "passer la recette du profil"
+      ],
+      [
+        "lang",
+        "passer en anglais"
+      ],
+      [
+        "theme",
+        "basculer clair / sombre"
+      ],
+      [
+        "clear",
+        "effacer"
+      ],
+      [
+        "exit",
+        "fermer (ou Échap)"
+      ]
+    ],
+    "unknown": "Commande inconnue : {cmd}. Tapez help.",
+    "hire": "Permission accordée. Ouverture de votre messagerie...",
+    "sudo": "Bien essayé. Essayez plutôt : sudo hire fahd",
+    "going": "Ouverture de {page}...",
+    "theme": "Thème changé.",
+    "konami": "Code Konami détecté. Vous avez l'œil, écrivons-nous.",
+    "blueprintOn": "Mode plan activé. Recliquez cinq fois sur le logo pour le quitter.",
+    "blueprintOff": "Mode plan désactivé.",
+    "console": "Vous inspectez le code ? On a des choses à se dire."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "line": "Erreur 404 : cette page n'a pas passé la recette.",
+    "back": "Retour à l'accueil"
+  }
 }

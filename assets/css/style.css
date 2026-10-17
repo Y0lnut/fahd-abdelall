@@ -437,8 +437,7 @@ html.blueprint .bar { background: rgba(18, 48, 90, .85); }
 
 /* ---------- sélecteur de langue ---------- */
 .langs-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; height: 36px; align-items: center; }
-.langs-switch button { border: 0; background: none; cursor: pointer; height: 28px; min-width: 32px; padding: 0 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--muted); transition: background .2s, color .2s; }
-.langs-switch button[lang="ar"] { font-family: "Readex", var(--sans); font-size: 14px; }
+.langs-switch button { font-family: "Bricolage", sans-serif; letter-spacing: .02em; border: 0; background: none; cursor: pointer; height: 28px; min-width: 32px; padding: 0 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--muted); transition: background .2s, color .2s; }
 .langs-switch button:hover { color: var(--text); }
 .langs-switch button[aria-pressed="true"] { background: var(--ink); color: #fff; }
 :root[data-theme="dark"] .langs-switch button[aria-pressed="true"] { background: #e6ebf2; color: var(--ink); }

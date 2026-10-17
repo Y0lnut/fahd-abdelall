@@ -59,8 +59,8 @@
           <button class="icon-btn" id="term-btn" type="button" aria-label="${esc(u.terminalHint)}" title="${esc(u.terminalHint)}">
             <span class="ib-glyph" aria-hidden="true">&gt;_</span><span class="ib-label">${esc(u.terminalBtn)}</span><kbd>/</kbd>
           </button>
-          <div class="langs-switch" role="group" aria-label="${esc(u.langSwitch)}">
-            ${LANGS.map((l) => `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}" title="${esc(u.langs[l])}">${l === "ar" ? "ع" : l.toUpperCase()}</button>`).join("")}
+          <div class="langs-switch" dir="ltr" role="group" aria-label="${esc(u.langSwitch)}">
+            ${LANGS.map((l) => `<button type="button" data-lang="${l}" aria-pressed="${l === lang}" title="${esc(u.langs[l])}">${l.toUpperCase()}</button>`).join("")}
           </div>
           <a class="btn btn-ink btn-sm" data-cv href="#" download>${esc(u.download)}</a>
           <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">

@@ -1,0 +1,109 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Fahd Abd El All — Digital Management & Project Management",
+    "description": "Master's student in TEMA – Digital Management at NEOMA Business School. Banking project management (BNP Paribas) and B2B business development (Samsic Facility)."
+  },
+  "nav": {
+    "about": "Profile",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact",
+    "download": "Download CV"
+  },
+  "hero": {
+    "name": "Fahd Abd El All",
+    "title": "Master's Student – TEMA Digital Management",
+    "subtitle": "NEOMA Business School · Paris",
+    "pitch": "Dual experience in B2B commercial development (Samsic Facility) and banking project management (BNP Paribas). Educated in France, the United States and Qatar. Autonomous, analytical and results-driven, with strong skills in prospecting, automation and project coordination.",
+    "cv": "assets/docs/CV_Fahd_Abd_El_All_EN.pdf"
+  },
+  "experience": [
+    {
+      "role": "Project Manager Assistant – Corporate Credit",
+      "company": "BNP Paribas",
+      "location": "Paris",
+      "period": "Feb 2026 – Aug 2026",
+      "points": [
+        "Writing test plans for application deployments in the corporate credit domain",
+        "Creating product sheets for business and technical teams",
+        "Contributing to the monitoring and coordination of digital transformation projects",
+        "Collaborating with IT teams and business stakeholders to ensure deliverable compliance"
+      ]
+    },
+    {
+      "role": "Junior International Key Account Manager",
+      "company": "Samsic Facility",
+      "location": "Paris",
+      "period": "Feb 2025 – Aug 2025",
+      "points": [
+        "Managing and retaining an international key account portfolio",
+        "Contributing to tailored commercial proposals",
+        "Coordinating with technical and operational teams",
+        "Building custom B2B prospecting tools (Excel/VBA) – Mail Scrapper V4.2"
+      ]
+    },
+    {
+      "role": "Intern – Security Analysis & Incidents",
+      "company": "Falcon Samsic Security Services – HIA",
+      "location": "Doha",
+      "period": "May 2023 – Nov 2023",
+      "points": [
+        "Managing logistics missions and client relations independently",
+        "Optimising routes, time management and client interactions"
+      ]
+    },
+    {
+      "role": "Commercial Director Assistant",
+      "company": "Falcon Security",
+      "location": "Doha",
+      "period": "May 2022 – Aug 2022",
+      "points": [
+        "Writing commercial proposals and managing client follow-ups",
+        "Website redesign and creation of communication materials",
+        "Prospecting and negotiating new contracts"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mail Scrapper V4.2",
+      "stack": ["Excel", "VBA", "External API"],
+      "description": "B2B prospecting tool that generates and verifies likely emails from prospect data, with a smart cache to save API credits, a valid-email filter and a database of company email formats."
+    },
+    {
+      "name": "Email Automation App",
+      "stack": ["Excel", "VBA", "Outlook"],
+      "description": "Prospect management interface with one-click personalised bulk sending through Outlook: dynamic variables (first name, last name, company) and automatic attachments."
+    }
+  ],
+  "education": [
+    { "school": "NEOMA Business School", "degree": "Master TEMA – Digital Management", "place": "Paris", "period": "2021 – 2026" },
+    { "school": "John Carroll University", "degree": "Exchange Program", "place": "Cleveland, USA", "period": "2024" },
+    { "school": "Epitech", "degree": "Exchange Program", "place": "Paris", "period": "2022" }
+  ],
+  "skills": {
+    "Tools & tech": ["Excel / VBA", "SQL", "Python", "Tableau", "Front-end web dev", "MS Office", "Adobe Suite"],
+    "CRM & prospecting": ["HubSpot", "Salesforce", "Sales Navigator", "Waalaxy"],
+    "Project management": ["Test plans", "Product sheets", "IT / business coordination", "Application deployment", "Digital transformation"],
+    "Soft skills": ["Analytical mindset", "Autonomy", "Clear communication", "Adaptability", "Teamwork"]
+  },
+  "languages": [
+    { "name": "French", "level": "Native" },
+    { "name": "English", "level": "Bilingual" },
+    { "name": "Arabic", "level": "Intermediate" },
+    { "name": "Spanish", "level": "Basic" }
+  ],
+  "interests": ["Amateur boxing", "Artificial intelligence", "Travel & cultures"],
+  "contact": {
+    "headline": "Let's work together",
+    "text": "I'm looking for a role in digital project management, transformation or business development. Feel free to reach out.",
+    "email": "fahdabdelall8@gmail.com",
+    "phone": "+33 6 06 66 06 63",
+    "showPhone": false,
+    "linkedin": "",
+    "location": "Paris, France"
+  }
+}

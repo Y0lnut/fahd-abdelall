@@ -1,0 +1,107 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "Fahd Abd El All — Digital Management & Gestion de projet",
+    "description": "Étudiant en Master TEMA – Digital Management à NEOMA Business School. Gestion de projet bancaire (BNP Paribas) et développement commercial B2B (Samsic Facility)."
+  },
+  "nav": {
+    "about": "Profil",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "education": "Formation",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "download": "Télécharger le CV"
+  },
+  "hero": {
+    "name": "Fahd Abd El All",
+    "title": "Étudiant Master TEMA – Digital Management",
+    "subtitle": "NEOMA Business School · Paris",
+    "pitch": "Double expérience en développement commercial B2B chez Samsic Facility et en gestion de projets bancaires chez BNP Paribas. Formé en France, aux États-Unis et au Qatar, je combine rigueur analytique, autonomie et sens du résultat pour mener des projets à forte valeur ajoutée.",
+    "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf"
+  },
+  "experience": [
+    {
+      "role": "Assistant Chef de Projet Crédit Corporate",
+      "company": "BNP Paribas",
+      "location": "Paris",
+      "period": "Fév. 2026 – Août 2026",
+      "points": [
+        "Rédaction de cahiers de recette pour des déploiements applicatifs en crédit corporate",
+        "Réalisation de fiches produit à destination des équipes métier et IT",
+        "Coordination transverse entre équipes techniques et parties prenantes métier",
+        "Participation au suivi de projets de transformation digitale bancaire"
+      ]
+    },
+    {
+      "role": "Key Account Manager International Junior",
+      "company": "Samsic Facility",
+      "location": "Paris",
+      "period": "Fév. 2025 – Août 2025",
+      "points": [
+        "Suivi et fidélisation d'un portefeuille de clients grands comptes internationaux",
+        "Élaboration d'offres commerciales sur mesure et coordination opérationnelle",
+        "Création d'un outil de prospection B2B personnalisé en Excel/VBA — Mail Scrapper V4.2"
+      ]
+    },
+    {
+      "role": "Stagiaire Analyse & Incidents de Sécurité",
+      "company": "Falcon Samsic Security Services",
+      "location": "Doha",
+      "period": "Mai – Nov. 2023",
+      "points": [
+        "Gestion de missions logistiques et relation client en toute autonomie",
+        "Optimisation des processus opérationnels et des interactions clients"
+      ]
+    },
+    {
+      "role": "Assistant Directeur Commercial",
+      "company": "Falcon Security",
+      "location": "Doha",
+      "period": "Mai – Août 2022",
+      "points": [
+        "Rédaction de propositions commerciales, prospection et négociation de contrats",
+        "Refonte du site web et création de supports de communication marketing"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mail Scrapper V4.2",
+      "stack": ["Excel", "VBA", "API externe"],
+      "description": "Outil de génération et de vérification d'emails B2B : cache intelligent pour éviter les vérifications redondantes, filtrage automatique des adresses valides, base interne des formats d'emails par entreprise."
+    },
+    {
+      "name": "Application d'emailing automatisé",
+      "stack": ["Excel", "VBA", "Outlook"],
+      "description": "Interface Excel couplée à Outlook pour l'envoi groupé personnalisé en un clic : variables dynamiques (nom, prénom, entreprise), pièces jointes automatiques, personnalisation à grande échelle."
+    }
+  ],
+  "education": [
+    { "school": "NEOMA Business School", "degree": "Master TEMA – Digital Management", "place": "Paris", "period": "2021 – 2026" },
+    { "school": "John Carroll University", "degree": "Programme d'échange", "place": "Cleveland, USA", "period": "2024" },
+    { "school": "Epitech", "degree": "Programme d'échange", "place": "Paris", "period": "2022" }
+  ],
+  "skills": {
+    "Outils & tech": ["Excel / VBA", "SQL", "Python", "Tableau", "Dev. web front-end", "Pack Office", "Pack Adobe"],
+    "CRM & prospection": ["HubSpot", "Salesforce", "Sales Navigator", "Waalaxy"],
+    "Gestion de projet": ["Cahiers de recette", "Fiches produit", "Coordination IT / métier", "Déploiement applicatif", "Transformation digitale"],
+    "Soft skills": ["Esprit analytique", "Autonomie & initiative", "Communication claire", "Adaptabilité", "Esprit collaboratif"]
+  },
+  "languages": [
+    { "name": "Français", "level": "Langue natale" },
+    { "name": "Anglais", "level": "Bilingue" },
+    { "name": "Arabe", "level": "Intermédiaire" },
+    { "name": "Espagnol", "level": "Notions" }
+  ],
+  "interests": ["Boxe amateur", "Intelligence artificielle", "Voyages & cultures"],
+  "contact": {
+    "headline": "Travaillons ensemble",
+    "text": "Je recherche un poste en gestion de projet digital, transformation ou business development. N'hésitez pas à me contacter.",
+    "email": "fahdabdelall8@gmail.com",
+    "phone": "+33 6 06 66 06 63",
+    "showPhone": false,
+    "linkedin": "",
+    "location": "Paris, France"
+  }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fahd Abd El All — CV</title>
+  <meta name="description" content="Étudiant en Master TEMA – Digital Management à NEOMA Business School.">
+  <meta property="og:title" content="Fahd Abd El All — CV">
+  <meta property="og:description" content="Digital Management · Gestion de projet · Business development B2B">
+  <meta property="og:image" content="assets/img/photo-square.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">F<span>A</span></a>
+    <nav id="nav" aria-label="Navigation principale"></nav>
+    <div class="topbar-actions">
+      <button id="lang-toggle" class="chip" type="button" aria-label="Changer de langue">EN</button>
+      <a id="cv-download" class="btn btn-small" href="#" download></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <p class="eyebrow" id="hero-subtitle"></p>
+        <h1 id="hero-name"></h1>
+        <p class="hero-title" id="hero-title"></p>
+        <p class="hero-pitch" id="hero-pitch"></p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact" id="cta-contact"></a>
+          <a class="btn btn-ghost" href="#experience" id="cta-exp"></a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/img/photo.jpg" alt="Portrait de Fahd Abd El All" width="800" height="1066">
+      </figure>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 data-key="experience"></h2>
+      <ol class="timeline" id="experience-list"></ol>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 data-key="projects"></h2>
+      <div class="cards" id="projects-list"></div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 data-key="education"></h2>
+      <ul class="edu" id="education-list"></ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 data-key="skills"></h2>
+      <div class="skills" id="skills-list"></div>
+      <div class="langs" id="languages-list"></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 id="contact-headline"></h2>
+      <p id="contact-text"></p>
+      <div class="contact-links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fahd Abd El All</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ EXTRA = {
     "fr": {
         "headline": "Master TEMA, Digital Management",
         "school": "NEOMA Business School, Paris",
-        "profile": "Étudiant en Master Digital Management à NEOMA Business School, avec une double expérience en développement commercial B2B chez Samsic Facility et en gestion de projets bancaires chez BNP Paribas. Formé en France, aux États-Unis et au Qatar, je combine rigueur analytique, autonomie et sens du résultat pour mener des projets à forte valeur ajoutée.",
+        "profile": "Jeune diplômé du Master TEMA, Digital Management de NEOMA Business School, avec une double expérience en développement commercial B2B chez Samsic Facility et en gestion de projets bancaires chez BNP Paribas. Formé en France, aux États-Unis et au Qatar, je combine rigueur analytique, autonomie et sens du résultat pour mener des projets à forte valeur ajoutée.",
         "labels": {"contact": "Contact", "email": "Email", "site": "Site", "loc": "Localisation", "mob": "Mobilité", "langs": "Langues",
                     "skills": "Compétences", "soft": "Savoir-être", "interests": "Centres d'intérêt",
                     "exp": "Expérience professionnelle", "edu": "Formation", "proj": "Projets"},
@@ -30,7 +30,7 @@ EXTRA = {
     "en": {
         "headline": "Master's in TEMA, Digital Management",
         "school": "NEOMA Business School, Paris",
-        "profile": "Master's student in Digital Management at NEOMA Business School, with dual experience in B2B business development at Samsic Facility and banking project management at BNP Paribas. Educated in France, the United States and Qatar. Autonomous, analytical and results-driven, with strong skills in prospecting, automation and project coordination.",
+        "profile": "Recent graduate of the TEMA Master's in Digital Management at NEOMA Business School, with dual experience in B2B business development at Samsic Facility and banking project management at BNP Paribas. Educated in France, the United States and Qatar. Autonomous, analytical and results-driven, with strong skills in prospecting, automation and project coordination.",
         "labels": {"contact": "Contact", "email": "Email", "site": "Website", "loc": "Location", "mob": "Mobility", "langs": "Languages",
                     "skills": "Skills", "soft": "Soft skills", "interests": "Interests",
                     "exp": "Professional experience", "edu": "Education", "proj": "Projects"},

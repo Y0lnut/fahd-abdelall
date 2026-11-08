@@ -35,7 +35,7 @@
     "first": "Fahd",
     "last": "Abd El All",
     "pitch": "Diplômé de NEOMA Business School, j'ai piloté des projets applicatifs chez BNP Paribas, développé un portefeuille grands comptes chez Samsic Facility et conçu mes propres outils d'automatisation. Je suis à l'aise partout où il faut comprendre un métier, structurer et livrer.",
-    "status": "Diplômé NEOMA 2026, ouvert aux opportunités en France et à l'international.",
+    "status": "Jeune diplômé NEOMA 2026, à la recherche d'un emploi en France ou à l'international.",
     "cv": "assets/docs/CV_Fahd_Abd_El_All_FR.pdf",
     "prompt": "fahd@paris:~$ whoami",
     "tagline": "Entre business et digital.",
@@ -305,7 +305,7 @@
       }
     ],
     "nowTitle": "En ce moment",
-    "now": "Je termine ma mission chez BNP Paribas en gestion de projet crédit corporate et je regarde la suite : gestion de projet, conseil, key account management ou business development. Je vis entre Paris, Doha et Le Caire, et je suis ouvert aux offres dans tous les pays.",
+    "now": "Je viens d'être diplômé du Master TEMA de NEOMA Business School, après un stage en gestion de projet crédit corporate chez BNP Paribas. Je suis aujourd'hui à la recherche d'un emploi en gestion de projet, conseil, key account management ou business development. Je vis entre Paris, Doha et Le Caire, et je suis ouvert aux offres dans tous les pays.",
     "ctaTitle": "Une opportunité en tête ?",
     "cta": "Écrivez-moi, je serai ravi d'en discuter."
   },
